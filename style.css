@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("ShareTechMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  font-family: "Norse Bold";
+}
+
+.entire-container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 50vh 50vh;
+}
+
+.left-container {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: rgb(145, 138, 82);
+}
+
+.right-container {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  background-color: rgb(97, 93, 66);
+}
+
+form {
+  font-size: 19px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+  margin-left: 50px;
+  width: 400px;
+  gap: 16px;
+}
+
+input[type="text"] {
+  height: 20px;
+  padding-left: 10px;
+}
+
+input[type="number"] {
+  height: 23px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.title-div,
+.pages-div,
+.author-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.read-div {
+  margin-top: 10px;
+  display: flex;
+  gap: 17px;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  height: 25px;
+  width: 20px;
+  align-content: center;
+}
+
+input[type="submit"] {
+  color: white;
+  height: 40px;
+  width: 130px;
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: rgb(116, 115, 102);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(124, 123, 109);
+  cursor: pointer;
+}
